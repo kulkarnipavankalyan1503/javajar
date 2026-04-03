@@ -10,7 +10,7 @@
     <version>0.2.0</version>
     <packaging>jar</packaging>
 
-    <!-- ✅ Spring Boot Parent -->
+    <!--  Spring Boot Parent -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -18,12 +18,12 @@
         <relativePath/>
     </parent>
 
-    <!-- ✅ Java Version -->
+    <!-- Java Version -->
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
-    <!-- ✅ Dependencies -->
+    <!--  Dependencies -->
     <dependencies>
 
         <!-- Spring Boot Web (IMPORTANT for port listening) -->
@@ -34,7 +34,7 @@
 
     </dependencies>
 
-    <!-- ✅ Build Plugins -->
+    <!-- Build Plugins -->
     <build>
         <plugins>
 
