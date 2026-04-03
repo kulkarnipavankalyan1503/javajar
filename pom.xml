@@ -10,7 +10,7 @@
     <version>0.2.0</version>
     <packaging>jar</packaging>
 
-    <!--  Spring Boot Parent -->
+    <!-- ✅ Spring Boot Parent -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -18,27 +18,34 @@
         <relativePath/>
     </parent>
 
-    <!-- Java Version -->
+    <!-- ✅ Java Version -->
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
-    <!--  Dependencies -->
+    <!-- ✅ Dependencies -->
     <dependencies>
 
-        <!-- Spring Boot Web (IMPORTANT for port listening) -->
+        <!-- Spring Boot Web (this enables Tomcat & port listening) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- Optional: for testing -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
-    <!-- Build Plugins -->
+    <!-- ✅ Build Section -->
     <build>
         <plugins>
 
-            <!-- Spring Boot Plugin (creates executable JAR) -->
+            <!-- Spring Boot Plugin (creates executable jar) -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
