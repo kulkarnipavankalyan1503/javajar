@@ -1,13 +1,13 @@
 package hello;
 
-import org.joda.time.LocalTime;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-public class HelloWorld {
-    public static void main(String[] args) {
-      LocalTime currentTime = new LocalTime();
-		  System.out.println("The current local time is: " + currentTime);
+@RestController
+public class HelloController {
 
-        Greeter greeter = new Greeter();
-        System.out.println(greeter.sayHello());
+    @GetMapping("/")
+    public String hello() {
+        return "Hello DevOps!";
     }
 }
